@@ -1,0 +1,26 @@
+{
+  "name": "hux",
+  "homepage": "https://github.com/Happy-Ferret/HuX",
+  "authors": [
+    "Happy-Ferret <MarkBauer@gmx.ch>"
+  ],
+  "description": "libc wrappers for the Anima runtime and the Mozilla platform.",
+  "main": "main.js",
+  "keywords": [
+    "libc",
+    "anima",
+    "linux",
+    "gnu",
+    "xul",
+    "chrome",
+    "mozilla"
+  ],
+  "license": "BSD-3-Clause",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
