@@ -1,4 +1,4 @@
-/* puts.js - puts (const char *s)
+/* mkdir.js - mkdir (const char *filename, mode_t mode)
  *
  * Copyright (c) 2016, Mark Bauermeister
  *
@@ -10,12 +10,13 @@ var {Cu} = require("chrome");
 var {ctypes} = Cu.import("resource://gre/modules/ctypes.jsm", null);
 var libc = ctypes.open("libc.so.6");
 
-function puts(str) {
-    var puts = libc.declare("puts",             /* Function name */
+function mkdir(file, mode) {
+    var mkdir = libc.declare("mkdir",           /* Function name */
                             ctypes.default_abi, /* Calling ABI */
                             ctypes.int,         /* Return type */
-                            ctypes.char.ptr);   /* Argument type */
-    puts(str);
+                            ctypes.char.ptr,    /* Argument type */
+                            ctypes.uint32_t);   /* Mode bit */
+    mkdir(file, mode);
 }
 
-module.exports = puts;
+module.exports = mkdir;

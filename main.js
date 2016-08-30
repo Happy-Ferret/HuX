@@ -7,5 +7,7 @@
  */
 
 module.exports = {
-    puts: require('./src/puts')
+    mkdir: require('./src/mkdir'),
+    puts: require('./src/puts'),
+    stat: require('./src/sym/stat')
 };
