@@ -2,7 +2,7 @@
   "asi": false,
   "bitwise": false,
   "browser": true,
-  "camelcase": true,
+  "camelcase": false,
   "curly": true,
   "forin": false,
   "immed": false,
