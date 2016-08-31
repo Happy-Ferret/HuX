@@ -12,6 +12,9 @@
   "noarg": true,
   "noempty": false,
   "nonew": true,
+  "node": true,
+  "moz": true,
+  "indent": 4,
   "predef": [
     "$",
     "jQuery",
